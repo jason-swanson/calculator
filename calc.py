@@ -33,7 +33,7 @@ def action(event):
         if result.text in ["0", "error"]:
             result.text = value
         else:
-            result.text = result.text + value
+            result.text += value
     elif value == "C":
         result.text = "0"
     elif value == "=":
