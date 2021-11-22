@@ -10,8 +10,8 @@ __all__ = ['calc', 'action']
 from browser import document, html # pylint: disable=import-error
 
 calc = html.TABLE(id='calc')
-calc.attach(html.TR(html.TH(
-    html.DIV("0", id="result"), colspan=3) + html.TD("C", id="clear")
+calc.attach(html.TR(
+    html.TH(html.DIV("0", id="result"), colspan=3) + html.TD("C", id="clear")
 ))
 calc.attach([
     html.TR(html.TD(x) for x in line)
